@@ -21,7 +21,7 @@ public class Json {
 		List<Field> fieldList = new ArrayList<>();
 		Class<?> curClass = c;
 		do {
-			Field[] fields = c.getDeclaredFields();
+			Field[] fields = curClass.getDeclaredFields();
 			for (int i = 0; i < fields.length; i++) {
 				fieldList.add(fields[i]);
 			}
@@ -50,7 +50,7 @@ public class Json {
 		return jsonObject.toString();
 	}
 
-	public static String toString(List<?> list) {
+	public static String listToString(List list) {
 		JSONArray jsonArray = new JSONArray();
 		try {
 			for (Object object : list) {
@@ -62,7 +62,7 @@ public class Json {
 		return jsonArray.toString();
 	}
 
-	public static String toString(Map<String,?> map) {
+	public static String mapToString(Map<String,?> map) {
 		JSONObject jsonObject = new JSONObject();
 		try{
 			for(Map.Entry<String, ?> entry : map.entrySet()) {
@@ -237,10 +237,10 @@ public class Json {
 		}
 
 		if (object instanceof List<?>) {
-			String s = toString(object);
+			String s = listToString((List) object);
 			return new JSONArray(s);
 		} else if (object instanceof Map<?, ?>) {
-			String s = toString(object);
+			String s = mapToString((Map<String, ?>) object);
 			return new JSONObject(s);
 		} else if (isPrimitive(object)) {
 			return object;

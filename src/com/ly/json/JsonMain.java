@@ -30,8 +30,8 @@ public class JsonMain {
 		chineseTeacher1.setName("LY1");
 		chineseTeacher1.setSex(0);
 		Course course1 = new Course();
-		course.setName("Chinese1");
-		chineseTeacher.setCourse(course1);
+		course1.setName("Chinese1");
+		chineseTeacher1.setCourse(course1);
 		
 		Student student1 = new Student();
 		student1.setAge(10);
