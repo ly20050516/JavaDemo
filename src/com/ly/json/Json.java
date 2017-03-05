@@ -190,16 +190,16 @@ public class Json {
 		return classType;
 	}
 	
-	private static Class[] getMapFieldType(Field field) throws Exception{
+	private static Class<?>[] getMapFieldType(Field field) throws Exception{
 		if(Map.class != field.getType()) {
 			throw new Exception("not a Map Field");
 		}
 		
 		Type fieldType = field.getGenericType();
 		ParameterizedType paramTypes = (ParameterizedType) fieldType;
-		Class[] kvtype = new Class[2];
-		kvtype[0] = (Class) paramTypes.getActualTypeArguments()[0];
-		kvtype[1] = (Class) paramTypes.getActualTypeArguments()[1];
+		Class<?>[] kvtype = new Class[2];
+		kvtype[0] = (Class<?>) paramTypes.getActualTypeArguments()[0];
+		kvtype[1] = (Class<?>) paramTypes.getActualTypeArguments()[1];
 		
 		return kvtype;
 	}
@@ -237,7 +237,7 @@ public class Json {
 		}
 
 		if (object instanceof List<?>) {
-			String s = listToString((List) object);
+			String s = listToString((List<?>) object);
 			return new JSONArray(s);
 		} else if (object instanceof Map<?, ?>) {
 			String s = mapToString((Map<String, ?>) object);

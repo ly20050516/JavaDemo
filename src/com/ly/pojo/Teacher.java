@@ -1,22 +1,13 @@
 package com.ly.pojo;
 
-import java.util.List;
-
 import com.ly.json.JsonName;
 
 public class Teacher extends Person{
 
-	@JsonName(value="students",listParameterType=Student.class)
-	private List<Student> students;
-	@JsonName(value="course",listParameterType=Course.class)
+	@JsonName(value="course")
 	private Course course;
-	
-	public List<Student> getStudents() {
-		return students;
-	}
-	public void setStudents(List<Student> students) {
-		this.students = students;
-	}
+	@JsonName(value="salary")
+	private int salary;
 	public Course getCourse() {
 		return course;
 	}

@@ -10,5 +10,5 @@ import java.lang.annotation.Target;
 public @interface JsonName {
 
 	String value() default "";
-	Class listParameterType() default Object.class;
+	Class<?> listParameterType() default Object.class;
 }

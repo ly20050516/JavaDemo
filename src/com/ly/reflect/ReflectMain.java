@@ -6,7 +6,7 @@ public class ReflectMain {
 		
 		ReflectDemo reflectDemo = new ReflectDemo();
 		reflectDemo.printClass(FieldClass.class);
-		reflectDemo.printClass(FieldInterface.class);
+		reflectDemo.fieldClassOperation();
 	}
 
 }
