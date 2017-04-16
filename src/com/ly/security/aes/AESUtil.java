@@ -137,4 +137,24 @@ public class AESUtil {
 		
 		return decrpty(secretSource, password.getBytes());
 	}
+	
+	public static byte[] encrpty2(byte[] dataSource,byte[] password) {
+		
+		
+		try {
+			SecretKeySpec secretKeySpec = new SecretKeySpec(password,"AES");
+			Cipher cipher = Cipher.getInstance("AES/ECB/NoPadding");
+			cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
+			return cipher.doFinal(dataSource);
+		} catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
+			e.printStackTrace();
+		} catch (InvalidKeyException e) {
+			e.printStackTrace();
+		} catch (IllegalBlockSizeException e) {
+			e.printStackTrace();
+		} catch (BadPaddingException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 }
