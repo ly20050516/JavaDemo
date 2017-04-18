@@ -14,7 +14,9 @@ public class Main {
 		RSAPrivateKey rsaPrivateKey = (RSAPrivateKey) map.get("private");
 		
 		String public_modules = rsaPublicKey.getModulus().toString();
-		System.out.println("RSA public key modules = " + public_modules);
+		System.out.println("RSA public key length = " + public_modules.length() + ";modules = " + public_modules);
+		System.out.print("RSA public key modules bit count = " + rsaPublicKey.getModulus().bitCount() + ";");
+		System.out.println("RSA public key modules bit length = " + rsaPublicKey.getModulus().bitLength());
 		String private_module = rsaPrivateKey.getModulus().toString();
 		System.out.println("RSA private key modules = " + private_module);
 		
