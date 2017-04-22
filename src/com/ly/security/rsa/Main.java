@@ -41,6 +41,27 @@ public class Main {
 		private_exponent = privateKey.getPrivateExponent().toString();
 		System.out.println("RSA private key exponents = " + private_exponent);
 		
+		long t1 = System.currentTimeMillis();
+		byte[] encrptyData = RSAUtils.encryptByRsaPublicKey(""
+				+ "Çë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜ"
+				+ "Çë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜ"
+				+ "Çë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜ"
+				+ "Çë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜ"
+				+ "Çë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜ"
+				+ "Çë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜ"
+				+ "Çë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜ"
+				+ "Çë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜ"
+				+ "Çë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜ", publicKey);
+		System.out.println("encrptyData length = " + encrptyData.length);
+		System.out.println("do encrpty data cost " + (System.currentTimeMillis() - t1));
+		
+		t1 = System.currentTimeMillis();
+		byte[] decrptyData = RSAUtils.decryptByRsaPrivateKey(encrptyData, rsaPrivateKey);
+		System.out.println("do descrpyt data cost " + (System.currentTimeMillis() - t1));
+		System.out.println("descrptyData length = " + decrptyData.length);
+		System.out.println(new String(decrptyData));
+		
+		
 	}
 
 }
