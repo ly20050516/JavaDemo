@@ -1,0 +1,1391 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+     
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>  
+
+    <script type="text/javascript" src="http://c.csdnimg.cn/pubfooter/js/tracking.js" charset="utf-8"></script>  
+
+    <script type="text/javascript">
+        var protocol = window.location.protocol;
+        document.write('<script type="text/javascript" src="' + protocol + '//csdnimg.cn/pubfooter/js/repoAddr2.js?v=' + Math.random() + '"></' + 'script>');
+    </script>
+
+  
+ <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+
+    <title>javaÖĞRSA¼Ó½âÃÜµÄÊµÏÖ - Central-PerkµÄ×¨À¸
+        - ²©¿ÍÆµµÀ - CSDN.NET</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="¹ØÓÚ¼ÓÃÜÊı¾İ³¤¶ÈºÍ½âÃÜÊı¾İ³¤¶È´ó¼Ò¿ÉÒÔ¿´Ò»ÏÂÎÒÇ°Ò»ÆªÎÄÕÂÄÚµÄ½éÉÜ£º¹ØÓÚRSAËã·¨ÃÜÔ¿³¤¶È/ÃÜÎÄ³¤¶È/Ã÷ÎÄ³¤¶ÈµÄ½éÉÜ&#160;public static void main(String[] args) throws Exception {		// TODO Auto-generated method stub		HashMap map = RSAUtils.getKeys();" />
+    <script src="http://static.blog.csdn.net/scripts/jquery.js" type="text/javascript"></script>
+      <script type="text/javascript" src="http://static.blog.csdn.net/scripts/jquery-version.js"></script>
+    <script type="text/javascript" src="http://static.blog.csdn.net/scripts/ad.js?v=1.1"></script>
+        <!--new top-->
+       
+        <link rel="stylesheet" href="http://c.csdnimg.cn/public/common/toolbar/css/index.css">
+        <!--new top-->
+    
+      <!-- ad begin -->
+         <script language="javascript" type="text/javascript" src="http://ads.csdn.net/js/tracking.js"></script>
+    <!-- ad end-->
+
+    <link rel="Stylesheet" type="text/css" href="http://static.blog.csdn.net/skin/default/css/style.css?v=1.0" />
+    <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="/centralperk/rss/list" />
+    <link rel="shortcut icon" href="http://c.csdnimg.cn/public/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="http://static.blog.csdn.net/scripts/SyntaxHighlighter/styles/default.css" />
+ 
+
+
+<script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+</script>
+
+
+</head>
+<body>
+
+
+    <!-- ¹ã¸æÎ»¿ªÊ¼ -->
+        <ins data-revive-zoneid="149" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+    <!-- ¹ã¸æÎ»½áÊø -->
+
+    
+   
+      <!--new top-->
+    <script id="toolbar-tpl-scriptId" fixed="true" prod="blog" skin="black" src="http://c.csdnimg.cn/public/common/toolbar/js/html.js" type="text/javascript"></script>
+     <!--new top-->
+    <div id="container">
+        <div id="header">
+    <div class="header">
+        <div id="blog_title">
+            <h2>
+                <a href="http://blog.csdn.net/centralperk">Central-PerkµÄ×¨À¸</a></h2>
+            <h3></h3>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        
+     
+    </div>
+</div>
+<div id="navigator">
+    <div class="navigator_bg">
+    </div>
+    <div class="navigator">
+        <ul>           
+                <li id="btnContents"><a href="http://blog.csdn.net/centralperk?viewmode=contents"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_mulu'])">
+                    <img src="http://static.blog.csdn.net/images/ico_list.gif">Ä¿Â¼ÊÓÍ¼</span></a></li>
+                <li id="btnView"><a href="http://blog.csdn.net/centralperk?viewmode=list"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_zhaiyao'])">
+                    <img src="http://static.blog.csdn.net/images/ico_summary.gif">ÕªÒªÊÓÍ¼</span></a></li>
+                <li id="btnRss"><a href="http://blog.csdn.net/centralperk/rss/list"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_RSS'])">
+                    <img src="http://static.blog.csdn.net/images/ico_rss.gif">¶©ÔÄ</span></a></li>                
+            
+
+            </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var username = "centralperk";
+    var _blogger = username;
+    var blog_address = "http://blog.csdn.net/centralperk";
+    var static_host = "http://static.blog.csdn.net";
+    var currentUserName = "";  
+</script>
+
+        <div id="body">
+            <div id="main">
+                <div class="main">
+                        <div class="ad_class">
+<div class="notice tracking-ad" data-mod='popu_3' > 
+
+
+<a href="http://blog.csdn.net/csdnproduct/article/details/70145129">
+<font color=blue><strong>¡¾¹«¸æ¡¿¹ØÓÚ¿ªÆôÓÃ»§×¢²á¼°µÇÂ¼ÊÖ»ú¶ÌĞÅÑéÖ¤µÄÍ¨Öª</strong></font></a>
+
+&nbsp;&nbsp;&nbsp;&nbsp
+
+<a href="http://blog.csdn.net/blogdevteam/article/details/70215785">
+<font color=red>CSDNÈÕ±¨20170417 ¡ª¡ª¡¶³ÌĞòÔ±×îºÃÓĞ Éç±£¡·
+</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp
+
+<a href="http://blog.csdn.net/blogdevteam/article/details/60961185">
+<font color=blue><strong>²©¿Í°á¼Ò£¬ÓĞÀñÏàËÍ</strong>
+</font></a>
+</div>                        </div>
+                        
+
+
+
+  
+<link href="http://static.blog.csdn.net/css/comment1.css" type="text/css" rel="stylesheet" />
+<link href="http://static.blog.csdn.net/css/style1.css" type="text/css" rel="stylesheet" />
+<script language='JavaScript' type='text/javascript' src='http://download.csdn.net/js/jquery.cookie.js'></script>
+<script type="text/javascript" src="http://c.csdnimg.cn/rabbit/search-service/main.js"></script>
+<link rel="stylesheet" href="http://static.blog.csdn.net/public/res-min/markdown_views.css?v=1.0" />
+<link rel="stylesheet" href="http://static.blog.csdn.net/css/category.css?v=1.0" />
+<script type="text/javascript" src="http://static.blog.csdn.net/public/res/bower-libs/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/web-storage-cache.min.js"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/replace.min.js"></script>
+
+<link rel="stylesheet" href="http://static.blog.csdn.net/code/prettify.css" />
+<script type="text/javascript" src="http://static.blog.csdn.net/code/prettify.js"></script>
+
+
+  <script type="text/ecmascript">
+      window.quickReplyflag = true;
+           
+            var isBole = false;
+            
+      
+      var fasrc="http://my.csdn.net/my/favorite/miniadd?t=java%e4%b8%adRSA%e5%8a%a0%e8%a7%a3%e5%af%86%e7%9a%84%e5%ae%9e%e7%8e%b0&u=http://blog.csdn.net/centralperk/article/details/8558678"
+
+    </script>
+<div id="article_details" class="details">
+    <div class="article_title">   
+         <span class="ico ico_type_Original"></span>
+
+
+    <h1>
+        <span class="link_title"><a href="/centralperk/article/details/8558678">
+        javaÖĞRSA¼Ó½âÃÜµÄÊµÏÖ            
+        </a></span>
+    </h1>
+</div>
+
+   
+
+        <div class="article_manage clearfix">
+        <div class="article_r">
+            <span class="link_postdate">2013-01-31 10:46</span>
+            <span class="link_view" title="ÔÄ¶Á´ÎÊı">94796ÈËÔÄ¶Á</span>
+            <span class="link_comments" title="ÆÀÂÛ´ÎÊı"> <a href="#comments" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">ÆÀÂÛ</a>(20)</span>
+            <span class="link_collect tracking-ad" data-mod="popu_171"> <a href="javascript:void(0);" onclick="javascript:collectArticle('java%e4%b8%adRSA%e5%8a%a0%e8%a7%a3%e5%af%86%e7%9a%84%e5%ae%9e%e7%8e%b0','8558678');return false;" title="ÊÕ²Ø">ÊÕ²Ø</a></span>
+             <span class="link_report"> <a href="#report" onclick="javascript:report(8558678,2);return false;" title="¾Ù±¨">¾Ù±¨</a></span>
+
+        </div>
+    </div>
+    <div class="embody"  style="display:none" id="embody">
+        <span class="embody_t">±¾ÎÄÕÂÒÑÊÕÂ¼ÓÚ£º</span>
+        <div class="embody_c" id="lib" value="{&quot;err&quot;:0,&quot;msg&quot;:&quot;ok&quot;,&quot;data&quot;:[]}"></div>
+    </div>
+    <style type="text/css">        
+            .embody{
+                padding:10px 10px 10px;
+                margin:0 -20px;
+                border-bottom:solid 1px #ededed;                
+            }
+            .embody_b{
+                margin:0 ;
+                padding:10px 0;
+            }
+            .embody .embody_t,.embody .embody_c{
+                display: inline-block;
+                margin-right:10px;
+            }
+            .embody_t{
+                font-size: 12px;
+                color:#999;
+            }
+            .embody_c{
+                font-size: 12px;
+            }
+            .embody_c img,.embody_c em{
+                display: inline-block;
+                vertical-align: middle;               
+            }
+             .embody_c img{               
+                width:30px;
+                height:30px;
+            }
+            .embody_c em{
+                margin: 0 20px 0 10px;
+                color:#333;
+                font-style: normal;
+            }
+    </style>
+    <script  type="text/javascript">
+        $(function () {
+            try
+            {
+                var lib = eval("("+$("#lib").attr("value")+")");
+                var html = "";
+                if (lib.err == 0) {
+                    $.each(lib.data, function (i) {
+                        var obj = lib.data[i];
+                        //html += '<img src="' + obj.logo + '"/>' + obj.name + "&nbsp;&nbsp;";
+                        html += ' <a href="' + obj.url + '" target="_blank">';
+                        html += ' <img src="' + obj.logo + '">';
+                        html += ' <em><b>' + obj.name + '</b></em>';
+                        html += ' </a>';
+                    });
+                    if (html != "") {
+                        setTimeout(function () {
+                            $("#lib").html(html);                      
+                            $("#embody").show();
+                        }, 100);
+                    }
+                }      
+            } catch (err)
+            { }
+            
+        });
+    </script>
+      <div class="category clearfix">
+        <div class="category_l">
+           <img src="http://static.blog.csdn.net/images/category_icon.jpg">
+            <span>·ÖÀà£º</span>
+        </div>
+        <div class="category_r">
+                    <label  onclick="GetCategoryArticles('911324','centralperk','top','8558678');">
+                        <span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_fenlei']);">java¿ª·¢<em>£¨38£©</em></span>
+                      <img class="arrow-down" src="http://static.blog.csdn.net/images/arrow_triangle _down.jpg" style="display:inline;">
+                      <img class="arrow-up" src="http://static.blog.csdn.net/images/arrow_triangle_up.jpg" style="display:none;">
+                        <div class="subItem">
+                            <div class="subItem_t"><a  href="http://blog.csdn.net/centralperk/article/category/911324"  target="_blank">×÷ÕßÍ¬ÀàÎÄÕÂ</a><i class="J_close">X</i></div>
+                            <ul class="subItem_l" id="top_911324">                            
+                            </ul>
+                        </div>
+                    </label>                    
+        </div>
+    </div>
+    <script   type="text/javascript" src="http://static.blog.csdn.net/scripts/category.js"></script>  
+        <div   class="bog_copyright">         
+            <p  class="copyright_p" >°æÈ¨ÉùÃ÷£º±¾ÎÄÎª²©Ö÷Ô­´´ÎÄÕÂ£¬Î´¾­²©Ö÷ÔÊĞí²»µÃ×ªÔØ¡£</p>
+        </div>
+
+  
+
+  
+  
+     
+
+<div id="article_content" class="article_content">
+
+<p>¹ØÓÚ¼ÓÃÜÊı¾İ³¤¶ÈºÍ½âÃÜÊı¾İ³¤¶È´ó¼Ò¿ÉÒÔ¿´Ò»ÏÂÎÒÇ°Ò»ÆªÎÄÕÂÄÚµÄ½éÉÜ£º</p>
+<p><u><span style="color:#0000ff"><a href="http://blog.csdn.net/centralperk/article/details/8553759" target="_blank">¹ØÓÚRSAËã·¨ÃÜÔ¿³¤¶È/ÃÜÎÄ³¤¶È/Ã÷ÎÄ³¤¶ÈµÄ½éÉÜ</a></span></u></p>
+<p>&nbsp;</p>
+<pre class="java" name="code">public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		HashMap&lt;String, Object&gt; map = RSAUtils.getKeys();
+		//Éú³É¹«Ô¿ºÍË½Ô¿
+		RSAPublicKey publicKey = (RSAPublicKey) map.get(&quot;public&quot;);
+		RSAPrivateKey privateKey = (RSAPrivateKey) map.get(&quot;private&quot;);
+		
+		//Ä£
+		String modulus = publicKey.getModulus().toString();
+		//¹«Ô¿Ö¸Êı
+		String public_exponent = publicKey.getPublicExponent().toString();
+		//Ë½Ô¿Ö¸Êı
+		String private_exponent = privateKey.getPrivateExponent().toString();
+		//Ã÷ÎÄ
+		String ming = &quot;123456789&quot;;
+		//Ê¹ÓÃÄ£ºÍÖ¸ÊıÉú³É¹«Ô¿ºÍË½Ô¿
+		RSAPublicKey pubKey = RSAUtils.getPublicKey(modulus, public_exponent);
+		RSAPrivateKey priKey = RSAUtils.getPrivateKey(modulus, private_exponent);
+		//¼ÓÃÜºóµÄÃÜÎÄ
+		String mi = RSAUtils.encryptByPublicKey(ming, pubKey);
+		System.err.println(mi);
+		//½âÃÜºóµÄÃ÷ÎÄ
+		ming = RSAUtils.decryptByPrivateKey(mi, priKey);
+		System.err.println(ming);
+	}</pre>
+<p><br>
+RSAUtils.java</p>
+<pre class="java" name="code">package yyy.test.rsa;
+
+import java.math.BigInteger;
+import java.security.KeyFactory;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.NoSuchAlgorithmException;
+import java.security.interfaces.RSAPrivateKey;
+import java.security.interfaces.RSAPublicKey;
+import java.security.spec.RSAPrivateKeySpec;
+import java.security.spec.RSAPublicKeySpec;
+import java.util.HashMap;
+
+import javax.crypto.Cipher;
+
+public class RSAUtils {
+
+	/**
+	 * Éú³É¹«Ô¿ºÍË½Ô¿
+	 * @throws NoSuchAlgorithmException 
+	 *
+	 */
+	public static HashMap&lt;String, Object&gt; getKeys() throws NoSuchAlgorithmException{
+		HashMap&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();
+		KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance(&quot;RSA&quot;);
+        keyPairGen.initialize(1024);
+        KeyPair keyPair = keyPairGen.generateKeyPair();
+        RSAPublicKey publicKey = (RSAPublicKey) keyPair.getPublic();
+        RSAPrivateKey privateKey = (RSAPrivateKey) keyPair.getPrivate();
+        map.put(&quot;public&quot;, publicKey);
+        map.put(&quot;private&quot;, privateKey);
+        return map;
+	}
+	/**
+	 * Ê¹ÓÃÄ£ºÍÖ¸ÊıÉú³ÉRSA¹«Ô¿
+	 * ×¢Òâ£º¡¾´Ë´úÂëÓÃÁËÄ¬ÈÏ²¹Î»·½Ê½£¬ÎªRSA/None/PKCS1Padding£¬²»Í¬JDKÄ¬ÈÏµÄ²¹Î»·½Ê½¿ÉÄÜ²»Í¬£¬ÈçAndroidÄ¬ÈÏÊÇRSA
+	 * /None/NoPadding¡¿
+	 * 
+	 * @param modulus
+	 *            Ä£
+	 * @param exponent
+	 *            Ö¸Êı
+	 * @return
+	 */
+	public static RSAPublicKey getPublicKey(String modulus, String exponent) {
+		try {
+			BigInteger b1 = new BigInteger(modulus);
+			BigInteger b2 = new BigInteger(exponent);
+			KeyFactory keyFactory = KeyFactory.getInstance(&quot;RSA&quot;);
+			RSAPublicKeySpec keySpec = new RSAPublicKeySpec(b1, b2);
+			return (RSAPublicKey) keyFactory.generatePublic(keySpec);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	/**
+	 * Ê¹ÓÃÄ£ºÍÖ¸ÊıÉú³ÉRSAË½Ô¿
+	 * ×¢Òâ£º¡¾´Ë´úÂëÓÃÁËÄ¬ÈÏ²¹Î»·½Ê½£¬ÎªRSA/None/PKCS1Padding£¬²»Í¬JDKÄ¬ÈÏµÄ²¹Î»·½Ê½¿ÉÄÜ²»Í¬£¬ÈçAndroidÄ¬ÈÏÊÇRSA
+	 * /None/NoPadding¡¿
+	 * 
+	 * @param modulus
+	 *            Ä£
+	 * @param exponent
+	 *            Ö¸Êı
+	 * @return
+	 */
+	public static RSAPrivateKey getPrivateKey(String modulus, String exponent) {
+		try {
+			BigInteger b1 = new BigInteger(modulus);
+			BigInteger b2 = new BigInteger(exponent);
+			KeyFactory keyFactory = KeyFactory.getInstance(&quot;RSA&quot;);
+			RSAPrivateKeySpec keySpec = new RSAPrivateKeySpec(b1, b2);
+			return (RSAPrivateKey) keyFactory.generatePrivate(keySpec);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	/**
+	 * ¹«Ô¿¼ÓÃÜ
+	 * 
+	 * @param data
+	 * @param publicKey
+	 * @return
+	 * @throws Exception
+	 */
+	public static String encryptByPublicKey(String data, RSAPublicKey publicKey)
+			throws Exception {
+		Cipher cipher = Cipher.getInstance(&quot;RSA&quot;);
+		cipher.init(Cipher.ENCRYPT_MODE, publicKey);
+		// Ä£³¤
+		int key_len = publicKey.getModulus().bitLength() / 8;
+		// ¼ÓÃÜÊı¾İ³¤¶È &lt;= Ä£³¤-11
+		String[] datas = splitString(data, key_len - 11);
+		String mi = &quot;&quot;;
+		//Èç¹ûÃ÷ÎÄ³¤¶È´óÓÚÄ£³¤-11ÔòÒª·Ö×é¼ÓÃÜ
+		for (String s : datas) {
+			mi += bcd2Str(cipher.doFinal(s.getBytes()));
+		}
+		return mi;
+	}
+
+	/**
+	 * Ë½Ô¿½âÃÜ
+	 * 
+	 * @param data
+	 * @param privateKey
+	 * @return
+	 * @throws Exception
+	 */
+	public static String decryptByPrivateKey(String data, RSAPrivateKey privateKey)
+			throws Exception {
+		Cipher cipher = Cipher.getInstance(&quot;RSA&quot;);
+		cipher.init(Cipher.DECRYPT_MODE, privateKey);
+		//Ä£³¤
+		int key_len = privateKey.getModulus().bitLength() / 8;
+		byte[] bytes = data.getBytes();
+		byte[] bcd = ASCII_To_BCD(bytes, bytes.length);
+		System.err.println(bcd.length);
+		//Èç¹ûÃÜÎÄ³¤¶È´óÓÚÄ£³¤ÔòÒª·Ö×é½âÃÜ
+		String ming = &quot;&quot;;
+		byte[][] arrays = splitArray(bcd, key_len);
+		for(byte[] arr : arrays){
+			ming += new String(cipher.doFinal(arr));
+		}
+		return ming;
+	}
+	/**
+	 * ASCIIÂë×ªBCDÂë
+	 * 
+	 */
+	public static byte[] ASCII_To_BCD(byte[] ascii, int asc_len) {
+		byte[] bcd = new byte[asc_len / 2];
+		int j = 0;
+		for (int i = 0; i &lt; (asc_len + 1) / 2; i++) {
+			bcd[i] = asc_to_bcd(ascii[j++]);
+			bcd[i] = (byte) (((j &gt;= asc_len) ? 0x00 : asc_to_bcd(ascii[j++])) + (bcd[i] &lt;&lt; 4));
+		}
+		return bcd;
+	}
+	public static byte asc_to_bcd(byte asc) {
+		byte bcd;
+
+		if ((asc &gt;= '0') &amp;&amp; (asc &lt;= '9'))
+			bcd = (byte) (asc - '0');
+		else if ((asc &gt;= 'A') &amp;&amp; (asc &lt;= 'F'))
+			bcd = (byte) (asc - 'A' + 10);
+		else if ((asc &gt;= 'a') &amp;&amp; (asc &lt;= 'f'))
+			bcd = (byte) (asc - 'a' + 10);
+		else
+			bcd = (byte) (asc - 48);
+		return bcd;
+	}
+	/**
+	 * BCD×ª×Ö·û´®
+	 */
+	public static String bcd2Str(byte[] bytes) {
+		char temp[] = new char[bytes.length * 2], val;
+
+		for (int i = 0; i &lt; bytes.length; i++) {
+			val = (char) (((bytes[i] &amp; 0xf0) &gt;&gt; 4) &amp; 0x0f);
+			temp[i * 2] = (char) (val &gt; 9 ? val + 'A' - 10 : val + '0');
+
+			val = (char) (bytes[i] &amp; 0x0f);
+			temp[i * 2 + 1] = (char) (val &gt; 9 ? val + 'A' - 10 : val + '0');
+		}
+		return new String(temp);
+	}
+	/**
+	 * ²ğ·Ö×Ö·û´®
+	 */
+	public static String[] splitString(String string, int len) {
+		int x = string.length() / len;
+		int y = string.length() % len;
+		int z = 0;
+		if (y != 0) {
+			z = 1;
+		}
+		String[] strings = new String[x + z];
+		String str = &quot;&quot;;
+		for (int i=0; i&lt;x+z; i++) {
+			if (i==x+z-1 &amp;&amp; y!=0) {
+				str = string.substring(i*len, i*len+y);
+			}else{
+				str = string.substring(i*len, i*len+len);
+			}
+			strings[i] = str;
+		}
+		return strings;
+	}
+	/**
+	 *²ğ·ÖÊı×é 
+	 */
+	public static byte[][] splitArray(byte[] data,int len){
+		int x = data.length / len;
+		int y = data.length % len;
+		int z = 0;
+		if(y!=0){
+			z = 1;
+		}
+		byte[][] arrays = new byte[x+z][];
+		byte[] arr;
+		for(int i=0; i&lt;x+z; i++){
+			arr = new byte[len];
+			if(i==x+z-1 &amp;&amp; y!=0){
+				System.arraycopy(data, i*len, arr, 0, y);
+			}else{
+				System.arraycopy(data, i*len, arr, 0, len);
+			}
+			arrays[i] = arr;
+		}
+		return arrays;
+	}
+}
+</pre><pre class="java" name="code">java
+Cipher cipher = Cipher.getInstance(&quot;RSA/ECB/PKCS1Padding&quot;);
+android
+Cipher cipher = Cipher.getInstance(&quot;RSA/ECB/NoPadding&quot;);
+
+²Î¿¼:
+http://stackoverflow.com/questions/6069369/rsa-encryption-difference-between-java-and-android
+http://stackoverflow.com/questions/2956647/rsa-encrypt-with-base64-encoded-public-key-in-android</pre>
+   
+</div>
+
+
+
+
+<!-- Baidu Button BEGIN -->
+
+
+
+
+<div class="bdsharebuttonbox tracking-ad" style="float: right;" data-mod="popu_172">
+<a href="#" class="bds_more" data-cmd="more" style="background-position:0 0 !important; background-image: url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=d754dcc0.png) !important"></a>
+<a href="#" class="bds_qzone" data-cmd="qzone" title="·ÖÏíµ½QQ¿Õ¼ä"  style="background-position:0 -52px !important"></a>
+<a href="#" class="bds_tsina" data-cmd="tsina" title="·ÖÏíµ½ĞÂÀËÎ¢²©"style="background-position:0 -104px !important"></a>
+<a href="#" class="bds_tqq" data-cmd="tqq" title="·ÖÏíµ½ÌÚÑ¶Î¢²©"style="background-position:0 -260px !important"></a>
+<a href="#" class="bds_renren" data-cmd="renren" title="·ÖÏíµ½ÈËÈËÍø"style="background-position:0 -208px !important"></a>
+<a href="#" class="bds_weixin" data-cmd="weixin" title="·ÖÏíµ½Î¢ĞÅ"style="background-position:0 -1612px !important" ></a>
+</div>
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<!-- Baidu Button END -->
+
+   <link rel="stylesheet" href="http://static.blog.csdn.net/css/blog_detail.css" />
+
+    
+<!--172.16.140.11-->
+
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1536434" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+
+<script type="text/javascript">
+    var fromjs = $("#fromjs");
+    if (fromjs.length > 0) {
+            $("#fromjs .markdown_views pre").addClass("prettyprint");
+            prettyPrint();
+
+            $('pre.prettyprint code').each(function () {
+                var lines = $(this).text().split('\n').length;
+                var $numbering = $('<ul/>').addClass('pre-numbering').hide();
+                $(this).addClass('has-numbering').parent().append($numbering);
+                for (i = 1; i <= lines; i++) {
+                    $numbering.append($('<li/>').text(i));
+                };
+                $numbering.fadeIn(1700);
+            });
+
+            $('.pre-numbering li').css("color", "#999");
+        }
+
+    
+
+</script>
+
+ 
+
+
+        <div id="digg" ArticleId="8558678" >
+            <dl id="btnDigg" class="digg digg_disable"  onclick="btndigga();">
+               
+                 <dt>¶¥</dt>
+                <dd>21</dd>
+            </dl>
+           
+              
+            <dl id="btnBury" class="digg digg_disable"  onclick="btnburya();">
+              
+                  <dt>²È</dt>
+                <dd>3</dd>               
+            </dl>
+            
+        </div>
+     <div class="tracking-ad" data-mod="popu_222"><a href="javascript:void(0);" >&nbsp;</a>   </div>
+    <div class="tracking-ad" data-mod="popu_223"> <a href="javascript:void(0);" >&nbsp;</a></div>
+    <script type="text/javascript">
+                function btndigga() {
+                    $(".tracking-ad[data-mod='popu_222'] a").click();
+                }
+                function btnburya() {
+                    $(".tracking-ad[data-mod='popu_223'] a").click();
+                }
+            </script>
+
+   <ul class="article_next_prev">
+                <li class="prev_article"><span  onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shangyipian']);location.href='/centralperk/article/details/8553759';">ÉÏÒ»Æª</span><a href="/centralperk/article/details/8553759" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shangyipian'])">too much data for RSA block .¹ØÓÚRSAËã·¨ÃÜÔ¿³¤¶È/ÃÜÎÄ³¤¶È/Ã÷ÎÄ³¤¶È</a></li>
+                <li class="next_article"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian']);location.href='/centralperk/article/details/8572354';">ÏÂÒ»Æª</span><a href="/centralperk/article/details/8572354" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian'])">java war´ò°ü¡¢½âÑ¹ÃüÁî</a></li>
+    </ul>
+
+    <div style="clear:both; height:10px;"></div>
+
+
+        <div class="similar_article"  style="display:none">
+                <h4>ÎÒµÄÍ¬ÀàÎÄÕÂ</h4>
+                <div class="similar_c"style="margin:20px 0px 0px 0px">
+                    <div class="similar_c_t">
+                                <label class="similar_cur">
+                                    <span  style="cursor:pointer"  onclick="GetCategoryArticles('911324','centralperk','foot','8558678');">java¿ª·¢<em>£¨38£©</em></span>
+                                </label>
+                    </div>
+                   
+                    <div class="similar_wrap tracking-ad" data-mod="popu_141"  style="max-height:195px;">
+                        <a href="http://blog.csdn.net" style="display:none">http://blog.csdn.net</a>
+                        <ul class="similar_list fl">                          
+                        </ul>
+
+                        <ul class="similar_list fr">                           
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+    <script  type="text/javascript">
+        $(function () {
+            GetCategoryArticles('911324', 'centralperk','foot','8558678');
+        });
+    </script>
+      
+</div>
+
+    <div>
+            <script type="text/javascript">
+                /*²©¿ÍÄÚÈİÒ³ÏÂ·½Banner1-728*90£¬´´½¨ÓÚ2016-12-13*/
+                var cpro_id = "u2843949";
+            </script>
+            <script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+     </div>
+
+<div id="suggest"></div>
+         <script  language="javascript" type='text/javascript'>     
+             $(function(){
+                 $.get("/centralperk/svc/GetSuggestContent/8558678",function(data){
+                     $("#suggest").html(data);
+                 });     
+             });             
+         </script>  
+
+
+<style>
+.blog-ass-articl dd {
+color: #369;
+width: 99%; /*ĞŞ¸ÄĞĞ*/
+float: left;
+overflow: hidden;
+font: normal normal 12px/23px "SimSun";
+height: 23px;
+margin: 0;
+padding: 0 0 0 10px;
+margin-right: 30px;
+background: url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;
+}
+</style>
+
+ <link rel="stylesheet" href="http://static.blog.csdn.net/css/replace.css"/>
+
+<div id="relate" data-mod="popu_218"  class="tracking-ad">
+        <div class="relate_t">
+            <h3><span>²Î¿¼ÖªÊ¶¿â</span></h3>
+        </div>
+        <div class="relate_c">
+        </div>
+</div>
+ 
+
+<dl class="blog-ass-articl" id="res-relatived" > 
+    <div class="embody embody_b" id="libkeyparent"  style="display:none">
+            <span class="embody_t">¸ü¶à×ÊÁÏÇë²Î¿¼£º</span>
+            <div class="embody_c" id="libkey"></div>
+    </div>
+
+
+     <dt><span>²ÂÄãÔÚÕÒ</span></dt>    
+
+
+   
+
+
+    <div id="adCollege" style="width: 42%;float: left;"> 
+        <script src="http://csdnimg.cn/jobreco/job_reco.js" type="text/javascript"></script> 
+        <script type="text/javascript">
+            csdn.position.showEdu({
+                sourceType: "blog",
+                searchType: "detail",
+                searchKey: "8558678",
+                username: "",
+                recordcount: "5",
+                containerId: "adCollege" //ÈİÆ÷DIVµÄid¡£ 
+            });
+            
+            setEduLoc();
+
+            function setEduLoc() {               
+                var edus = $("#adCollege div dd a");
+                if (edus.length == 0) {
+                    setTimeout(function () {
+                        setEduLoc();
+                    }, 500);
+                }
+                else {
+                    var eduLoc = "?ref=blog&loc=0";
+                    $.each(edus, function (index,item) {
+                        var href = $(this).attr("href") + eduLoc;
+                        $(this).attr("href", href);
+                    });
+                }
+            }
+
+        </script> 
+    </div>  
+
+    
+     <div id="res"  data-mod="popu_36"  class="tracking-ad" style="width: 42%;float: left;margin-right: 30px;"></div>
+   
+</dl>
+
+
+<script type="text/javascript">
+    $(function () {
+        setTimeout(function () {
+            var searchtitletags = 'javaÖĞRSA¼Ó½âÃÜµÄÊµÏÖ' + ',' + $("#tags").html();
+            searchService({
+                index: 'blog',
+                query: searchtitletags,
+                from: 5,
+                size: 5,
+                appendTo: '#res',
+                url: 'recommend',
+                his: 2,
+                client: "blog_cf_enhance",
+                tmpl: '<dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="#{ url }" title="#{ title }" strategy="#{ strategy }">#{ title }</a></dd>'
+            });
+        }, 500);
+    });    
+
+ </script>  
+
+
+    <div id="ad_cen">        
+                    <script type="text/javascript">
+                        /*²©¿ÍÄÚÈİÒ³ÏÂ·½Banner-728*90£¬´´½¨ÓÚ2014-7-3*/
+                        var cpro_id = "u1607657";
+                    </script>
+                    <script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+    </div>  
+
+
+<div class="comment_class">
+    <div id="comment_title" class="panel_head">
+        <span class="see_comment">²é¿´ÆÀÂÛ</span><a name="comments"></a></div>
+    <div id="comment_list">
+    </div>
+    <div id="comment_bar">
+    </div>
+    <div id="comment_form">
+    </div>
+    <div class="announce">
+        * ÒÔÉÏÓÃ»§ÑÔÂÛÖ»´ú±íÆä¸öÈË¹Ûµã£¬²»´ú±íCSDNÍøÕ¾µÄ¹Ûµã»òÁ¢³¡<a name="reply"></a><a name="quote"></a></div>
+</div>
+
+<script type="text/javascript">
+    var fileName = '8558678';
+    var commentscount = 20;
+    var islock = false
+</script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/comment.js"></script>
+    <div id="ad_bot">
+    </div>
+<div id="report_dialog">
+</div>
+
+<div id="d-top"  style="bottom:60px;">
+
+        <a id="quick-reply" class="btn btn-top q-reply" title="¿ìËÙ»Ø¸´" style="display:none;">
+            <img src="http://static.blog.csdn.net/images/blog-icon-reply.png" alt="¿ìËÙ»Ø¸´">
+        </a>    
+    <a id="d-top-a" class="btn btn-top backtop"  style="display: none;" title="·µ»Ø¶¥²¿" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_huidaodingbu'])" style="">         
+         <img src="http://static.blog.csdn.net/images/top.png" alt="TOP">
+    </a>
+</div>
+<script type="text/javascript">
+    $(function ()
+    {
+        $("#ad_frm_0").height("90px");
+        
+        setTimeout(function(){
+            $("#ad_frm_2").height("200px");
+        },1000);    
+    });
+  
+</script>
+<style type="text/css">
+    .tag_list
+    {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #D7CBC1;
+        color: #000000;
+        font-size: 12px;
+        line-height: 20px;
+        list-style: none outside none;
+        margin: 10px 2% 0 1%;
+        padding: 1px;
+    }
+    .tag_list h5
+    {
+        background: none repeat scroll 0 0 #E0DBD3;
+        color: #47381C;
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 5px;
+        margin: 0;
+    }
+    .tag_list h5 a
+    {
+        color: #47381C;
+    }
+    .classify
+    {
+        margin: 10px 0;
+        padding: 4px 12px 8px;
+    }
+    .classify a
+    {
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+</style>
+
+
+<div class="tag_list" style="display:none"></div>
+  <script  language="javascript" type='text/javascript'>     
+      $(function(){
+              setTimeout(function(){
+                  $.get("/centralperk/svc/GetTagContent",function(data){
+                      $(".tag_list").html(data).show();
+                  });     
+              });
+          },500);                       
+ </script> 
+
+
+<div id="pop_win" style="display:none ;position: absolute; z-index: 10000; border: 1px solid rgb(220, 220, 220); top: 222.5px; left: 630px; opacity: 1; background: none 0px 0px repeat scroll rgb(255, 255, 255);">
+    
+</div>
+<div id="popup_mask"></div>
+<style>
+    #popup_mask
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 9999;
+        left: 0px;
+        top: 0px;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+        display: none;
+    }
+
+</style>
+
+
+
+
+<script type="text/javascript">
+    $(function(){        
+        
+        setTimeout(function(){
+            $(".comment_body:contains('»Ø¸´')").each(function(index,item){
+                var u=$(this).text().split('£º')[0].toString().replace("»Ø¸´","")
+                var thisComment=$(this);
+                if(u)
+                {
+                    $.getJSON("https://passport.csdn.net/get/nick?callback=?", {users: u}, function(a) {
+                        if(a!=null&&a.data!=null&&a.data.length>0)
+                        {
+                            nick=a.data[0].n; 
+                            if(u!=nick)
+                            {
+                                thisComment.text(thisComment.text().replace(u,nick));  
+                            }
+                        }       
+                    });  
+                }
+            });         
+
+        },200);  
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },5000);
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },10000);
+
+        setTimeout(function(){
+            $(".math").each(function(index,value){$(this).find("span").last().css("color","#fff"); })
+        },15000);
+        
+        setTimeout(function(){
+            $("a img[src='http://js.tongji.linezing.com/stats.gif']").parent().css({"position":"absolute","left":"50%"});
+        },300);
+    });
+
+    function loginbox(){
+        var $logpop=$("#pop_win");
+        $logpop.html('<iframe src="https://passport.csdn.net/account/loginbox?service=http://static.blog.csdn.net/callback.htm" frameborder="0" height="600" width="400" scrolling="no"></iframe>');
+
+        $('#popup_mask').css({
+            opacity: 0.5,
+            width: $( document ).width() + 'px',
+            height:  $( document ).height() + 'px'
+        });
+        $('#popup_mask').css("display","block");
+ 
+        $logpop.css( {
+            top: ($( window ).height() - $logpop.height())/ 2  + $( window 
+       ).scrollTop() + 'px',
+            left:($( window ).width() - $logpop.width())/ 2
+        } );
+ 
+        setTimeout( function () {
+            $logpop.show();
+            $logpop.css( {
+                opacity: 1
+            } );
+        }, 200 );
+ 
+        $('#popup_mask').unbind("click");
+        $('#popup_mask').bind("click", function(){
+            $('#popup_mask').hide();
+            var $clopop = $("#pop_win");
+            $("#common_ask_div_sc").css("display","none");
+            $clopop.css( {
+                opacity: 0
+            } );
+            setTimeout( function () {
+                $clopop.hide();
+            }, 350 );
+            return false;
+        });
+    }   
+
+</script>
+ <script language="javascript" type="text/javascript" src="http://ads.csdn.net/js/async_new.js"></script>      
+
+
+
+
+                        <div class="clear">
+                        </div>
+                    </div>                   
+                
+            </div>
+                   
+           <div id="side">
+               
+    <div class="side">
+<div id="panel_Profile" class="panel">
+<ul class="panel_head"><span>¸öÈË×ÊÁÏ</span></ul>
+<ul class="panel_body profile">
+<div id="blog_userface">
+    <a href="http://my.csdn.net/centralperk" target="_blank">
+    <img src="http://avatar.csdn.net/C/5/1/1_centralperk.jpg" title="·ÃÎÊÎÒµÄ¿Õ¼ä" style="max-width:90%"/>
+    </a>
+    <br />
+    <span><a href="http://my.csdn.net/centralperk" class="user_name" target="_blank">centralperk</a></span>
+</div>
+<div class="interact">
+
+    <a href="javascript:void(0);" class="attent" id="span_add_follow" title="[¼Ó¹Ø×¢]"></a>
+
+ <a href="javascript:void(0);" class="letter"  title="[·¢Ë½ĞÅ]" onclick="window.open('http://msg.csdn.net/letters/model?receiver=centralperk','_blank','height=350,width=700');_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_sixin'])"></a>  
+</div>
+<div id="blog_medal">
+                <div id="bms_box">
+               </div>
+</div>
+<ul id="blog_rank">
+    <li>·ÃÎÊ£º<span>1710989´Î</span></li>
+    <li>»ı·Ö£º<span>14615</span> </li>    
+    <li >µÈ¼¶£º <span style="position:relative;display:inline-block;z-index:1" >
+            <img src="http://c.csdnimg.cn/jifen/images/xunzhang/jianzhang/blog7.png" alt="" style="vertical-align: middle;" id="leveImg">
+            <div id="smallTittle" style=" position: absolute;  left: -24px;  top: 25px;  text-align: center;  width: 101px;  height: 32px;  background-color: #fff;  line-height: 32px;  border: 2px #DDDDDD solid;  box-shadow: 0px 2px 2px rgba (0,0,0,0.1);  display: none;   z-index: 999;">
+            <div style="left: 42%;  top: -8px;  position: absolute;  width: 0;  height: 0;  border-left: 10px solid transparent;  border-right: 10px solid transparent;  border-bottom: 8px solid #EAEAEA;"></div>
+            »ı·Ö£º14615 </div>
+        </span>  </li>
+    <li>ÅÅÃû£º<span>µÚ667Ãû</span></li>
+</ul>
+<ul id="blog_statistics">
+    <li>Ô­´´£º<span>164Æª</span></li>
+    <li>×ªÔØ£º<span>22Æª</span></li>
+    <li>ÒëÎÄ£º<span>0Æª</span></li>
+    <li>ÆÀÂÛ£º<span>271Ìõ</span></li>
+</ul>
+</ul>
+</div>
+
+
+<div class="panel" id="panel_Search">
+    <ul class="panel_head"><span>ÎÄÕÂËÑË÷</span></ul>
+    <ul class="panel_body">
+        <form id="frmSearch" action="http://so.csdn.net/search" class="form_search" target="_blank">
+        <span><input id="inputSearch" type="text" class="blogsearch" title="ÇëÊäÈë¹Ø¼ü×Ö" /></span>
+        <input id="btnSubmit" type="button" value="ËÑË÷" title="search in blog" />
+        <input type="hidden" name="q" id="inputQ" />
+        <input type="hidden" name="t" value="blog" />
+        <a id="btnSearchBlog" target="_blank"></a>
+        </form>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {           
+            search();
+        });
+
+        $("#frmSearch").submit(function () {
+            search();
+            return false;
+        });
+
+        function search()
+        {
+            var url = "http://so.csdn.net/so/search/s.do?q=" + encodeURIComponent($("#inputSearch").val()) + "&u=" + username + "&t=blog";
+            window.location.href = url;
+        }   
+    });
+</script><div id="panel_Category" class="panel">
+<ul class="panel_head"><span>ÎÄÕÂ·ÖÀà</span></ul>
+<ul class="panel_body">    
+                 <li>
+                    <a href="/centralperk/article/category/788412" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">JAVA-ÃæÏò¶ÔÏó£¨ÏÂ£©</a><span>(7)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/824372" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">JavaWeb</a><span>(4)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/823519" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">XML</a><span>(10)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/885740" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">Android¿ª·¢ÖĞµÄÒ»Ğ©³£¼û´íÎóÒÔ¼°Òì³£</a><span>(19)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/910289" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">android¿ª·¢</a><span>(80)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/911324" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">java¿ª·¢</a><span>(39)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/1063251" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">Linux-Ubuntu</a><span>(14)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/1137936" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">ÒÆ¶¯¿ª·¢</a><span>(37)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/1140485" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">androidÌØĞ§</a><span>(7)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/1343278" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">Êı¾İ¿â</a><span>(2)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/1365881" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">android»ù´¡</a><span>(8)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/1365980" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">android UI</a><span>(11)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/1588549" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">Objective-C»ù´¡</a><span>(9)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/2167961" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">android-´úÂëÀïÄ£Äâ·¢ËÍ°´¼ü</a><span>(1)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/2182213" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">android-ÊÖÊÆ½âËø</a><span>(1)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/5678271" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">android studio ÖĞÎÄÂÒÂë</a><span>(1)</span>
+                </li>
+                 <li>
+                    <a href="/centralperk/article/category/6116509" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">IOS¿ª·¢</a><span>(3)</span>
+                </li>
+</ul>
+</div><div id="panel_Archive" class="panel">
+<ul class="panel_head"><span>ÎÄÕÂ´æµµ</span></ul>
+<ul class="panel_body">
+<div id="archive_list">
+<!--¹éµµÍ³¼Æ-->
+<li><a href="/centralperk/article/month/2016/12">2016Äê12ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2016/06">2016Äê06ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2016/05">2016Äê05ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2016/04">2016Äê04ÔÂ</a><span>(2)</span></li><li><a href="/centralperk/article/month/2016/03">2016Äê03ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2016/02">2016Äê02ÔÂ</a><span>(3)</span></li><li><a href="/centralperk/article/month/2016/01">2016Äê01ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2015/09">2015Äê09ÔÂ</a><span>(3)</span></li><li><a href="/centralperk/article/month/2015/07">2015Äê07ÔÂ</a><span>(2)</span></li><li><a href="/centralperk/article/month/2015/04">2015Äê04ÔÂ</a><span>(2)</span></li><li><a href="/centralperk/article/month/2015/03">2015Äê03ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2015/02">2015Äê02ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2014/10">2014Äê10ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2014/08">2014Äê08ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2014/04">2014Äê04ÔÂ</a><span>(3)</span></li><li><a href="/centralperk/article/month/2014/03">2014Äê03ÔÂ</a><span>(3)</span></li><li><a href="/centralperk/article/month/2013/12">2013Äê12ÔÂ</a><span>(2)</span></li><li><a href="/centralperk/article/month/2013/11">2013Äê11ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2013/10">2013Äê10ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2013/09">2013Äê09ÔÂ</a><span>(3)</span></li><li><a href="/centralperk/article/month/2013/08">2013Äê08ÔÂ</a><span>(3)</span></li><li><a href="/centralperk/article/month/2013/07">2013Äê07ÔÂ</a><span>(3)</span></li><li><a href="/centralperk/article/month/2013/06">2013Äê06ÔÂ</a><span>(2)</span></li><li><a href="/centralperk/article/month/2013/05">2013Äê05ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2013/03">2013Äê03ÔÂ</a><span>(10)</span></li><li><a href="/centralperk/article/month/2013/02">2013Äê02ÔÂ</a><span>(5)</span></li><li><a href="/centralperk/article/month/2013/01">2013Äê01ÔÂ</a><span>(8)</span></li><li><a href="/centralperk/article/month/2012/12">2012Äê12ÔÂ</a><span>(2)</span></li><li><a href="/centralperk/article/month/2012/11">2012Äê11ÔÂ</a><span>(2)</span></li><li><a href="/centralperk/article/month/2012/10">2012Äê10ÔÂ</a><span>(2)</span></li><li><a href="/centralperk/article/month/2012/09">2012Äê09ÔÂ</a><span>(13)</span></li><li><a href="/centralperk/article/month/2012/08">2012Äê08ÔÂ</a><span>(11)</span></li><li><a href="/centralperk/article/month/2012/07">2012Äê07ÔÂ</a><span>(5)</span></li><li><a href="/centralperk/article/month/2012/06">2012Äê06ÔÂ</a><span>(4)</span></li><li><a href="/centralperk/article/month/2012/05">2012Äê05ÔÂ</a><span>(27)</span></li><li><a href="/centralperk/article/month/2012/04">2012Äê04ÔÂ</a><span>(15)</span></li><li><a href="/centralperk/article/month/2012/03">2012Äê03ÔÂ</a><span>(9)</span></li><li><a href="/centralperk/article/month/2012/02">2012Äê02ÔÂ</a><span>(5)</span></li><li><a href="/centralperk/article/month/2012/01">2012Äê01ÔÂ</a><span>(4)</span></li><li><a href="/centralperk/article/month/2011/11">2011Äê11ÔÂ</a><span>(3)</span></li><li><a href="/centralperk/article/month/2011/10">2011Äê10ÔÂ</a><span>(2)</span></li><li><a href="/centralperk/article/month/2011/09">2011Äê09ÔÂ</a><span>(1)</span></li><li><a href="/centralperk/article/month/2011/05">2011Äê05ÔÂ</a><span>(10)</span></li><li><a href="/centralperk/article/month/2011/02">2011Äê02ÔÂ</a><span>(5)</span></li>
+</div>
+</ul>
+</div>
+<div id="hotarticls" class="panel">
+<ul class="panel_head">
+    <span>       
+ÔÄ¶ÁÅÅĞĞ    </span>
+</ul>
+
+<ul class="panel_body itemlist">
+<li>
+<a href="/centralperk/article/details/7360590" title="java-ÕıÔò±í´ïÊ½ÅĞ¶ÏÊÖ»úºÅ">java-ÕıÔò±í´ïÊ½ÅĞ¶ÏÊÖ»úºÅ</a><span>(103970)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/8558678" title="javaÖĞRSA¼Ó½âÃÜµÄÊµÏÖ">javaÖĞRSA¼Ó½âÃÜµÄÊµÏÖ</a><span>(94607)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/7493731" title="androidÖĞ³£ÓÃµÄµ¯³öÌáÊ¾¿ò">androidÖĞ³£ÓÃµÄµ¯³öÌáÊ¾¿ò</a><span>(73699)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/8674599" title="android-ĞŞ¸ÄTextViewÖĞ²¿·ÖÎÄ×ÖµÄÑÕÉ«">android-ĞŞ¸ÄTextViewÖĞ²¿·ÖÎÄ×ÖµÄÑÕÉ«</a><span>(70281)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/7597516" title="android ¼àÌıÍøÂçÁ¬½Ó×´Ì¬µÄ¸Ä±ä">android ¼àÌıÍøÂçÁ¬½Ó×´Ì¬µÄ¸Ä±ä</a><span>(56709)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/8538697" title="java RSA¼ÓÃÜ½âÃÜÊµÏÖ">java RSA¼ÓÃÜ½âÃÜÊµÏÖ</a><span>(48010)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/7494441" title="android ÊµÏÖÓÉÏÂÖÁÉÏµ¯³ö²¢Î»ÓÚÆÁÄ»µ×²¿µÄÌáÊ¾¿ò">android ÊµÏÖÓÉÏÂÖÁÉÏµ¯³ö²¢Î»ÓÚÆÁÄ»µ×²¿µÄÌáÊ¾¿ò</a><span>(43807)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/8080908" title="androidÀ¶ÑÀ¿ª·¢ À¶ÑÀÉè±¸µÄ²éÕÒºÍÁ¬½Ó">androidÀ¶ÑÀ¿ª·¢ À¶ÑÀÉè±¸µÄ²éÕÒºÍÁ¬½Ó</a><span>(36491)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/9312401" title="android usb host ¶ÁĞ´USBÉè±¸">android usb host ¶ÁĞ´USBÉè±¸</a><span>(32843)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/8603514" title="Ê¹ÓÃcmdÃüÁîÉ¾³ıÎÄ¼ş¼ĞÏÂËùÓĞÎÄ¼ş">Ê¹ÓÃcmdÃüÁîÉ¾³ıÎÄ¼ş¼ĞÏÂËùÓĞÎÄ¼ş</a><span>(31959)</span>
+</li>
+</ul>
+</div>
+<div id="hotarticls2" class="panel">
+<ul class="panel_head"><span>ÆÀÂÛÅÅĞĞ</span></ul>
+<ul class="panel_body itemlist">
+<li>
+<a href="/centralperk/article/details/7493731" title="androidÖĞ³£ÓÃµÄµ¯³öÌáÊ¾¿ò">androidÖĞ³£ÓÃµÄµ¯³öÌáÊ¾¿ò</a><span>(20)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/8558678" title="javaÖĞRSA¼Ó½âÃÜµÄÊµÏÖ">javaÖĞRSA¼Ó½âÃÜµÄÊµÏÖ</a><span>(20)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/9312401" title="android usb host ¶ÁĞ´USBÉè±¸">android usb host ¶ÁĞ´USBÉè±¸</a><span>(19)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/7360590" title="java-ÕıÔò±í´ïÊ½ÅĞ¶ÏÊÖ»úºÅ">java-ÕıÔò±í´ïÊ½ÅĞ¶ÏÊÖ»úºÅ</a><span>(13)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/22088499" title="ScrollViewÄÚÇ¶Ì×ListViewÊ±½ûÖ¹ListViewµÄ¹ö¶¯">ScrollViewÄÚÇ¶Ì×ListViewÊ±½ûÖ¹ListViewµÄ¹ö¶¯</a><span>(13)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/7446726" title="android ListViewÄÚÊı¾İµÄ¶¯Ì¬Ìí¼ÓÓëÉ¾³ı">android ListViewÄÚÊı¾İµÄ¶¯Ì¬Ìí¼ÓÓëÉ¾³ı</a><span>(11)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/8538697" title="java RSA¼ÓÃÜ½âÃÜÊµÏÖ">java RSA¼ÓÃÜ½âÃÜÊµÏÖ</a><span>(10)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/7425593" title="AndroidÓ¦ÓÃ³ÌĞòÇ©Ãû debugÇ©Ãû">AndroidÓ¦ÓÃ³ÌĞòÇ©Ãû debugÇ©Ãû</a><span>(9)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/8080908" title="androidÀ¶ÑÀ¿ª·¢ À¶ÑÀÉè±¸µÄ²éÕÒºÍÁ¬½Ó">androidÀ¶ÑÀ¿ª·¢ À¶ÑÀÉè±¸µÄ²éÕÒºÍÁ¬½Ó</a><span>(8)</span>
+</li>
+<li>
+<a href="/centralperk/article/details/8634944" title="Exception in thread &quot;main&quot; java.lang.RuntimeException: Stub!   java.lang.NoClassDefFoundError">Exception in thread &quot;main&quot; java.lang.RuntimeException: Stub!   java.lang.NoClassDefFoundError</a><span>(8)</span>
+</li>
+</ul>
+</div>
+<div id="homepageArticles" class="panel tracking-ad" data-mod="popu_4">
+<ul class="panel_head"><span>ÍÆ¼öÎÄÕÂ</span></ul>
+<ul class="panel_body" id="ad_commend">
+<ul>
+<li><a href="http://blog.csdn.net/u010278923/article/details/70186182" target="_blank">* ÔÆ¼ÆËãµÄÄÇĞ©ÊÂ¶ùÖ®¼ÆËãĞéÄâ»¯</a></li>
+<li><a href="http://blog.csdn.net/congyihao/article/details/70195154" 
+target="_blank">* Î¢·şÎñ--·Ö²¼Ê½ÊÂÎñµÄÊµÏÖ·½·¨¼°Ìæ´ú·½°¸</a></li>
+<li><a href="http://blog.csdn.net/my_truelove/article/details/70196028"target="_blank">* ÄãÓ¦¸ÃÖªµÀµÄ Android Êı¾İ¿â¸üĞÂ²ßÂÔ</a></li>
+<li><a href="http://blog.csdn.net/androidlushangderen/article/details/70195430" 
+target="_blank">* HDFS¸±±¾·ÅÖÃ½ÚµãÑ¡ÔñµÄÓÅ»¯</a></li>
+<li><a href="http://blog.csdn.net/blogdevteam/article/details/70197331" 
+target="_blank">* CSDNÈÕ±¨20170416 ¡ª¡ª¡¶ÎªÊ²Ã´³ÌĞòÔ±»°ÉÙÇ®¶àËÀµÃÔç£¿¡·</a></li>
+<li><a href="http://blog.csdn.net/tenkywoo/article/details/70176224" 
+target="_blank">* ·²ÈËÊÓ½ÇC++Ö®string(ÉÏ)</a></li>
+
+</ul></ul>
+</div>
+
+
+<div id="newcomments" class="panel">
+<ul class="panel_head"><span>×îĞÂÆÀÂÛ</span></ul>
+<ul class="panel_body itemlist">
+    <li>
+   
+         <a href="/centralperk/article/details/8558678#comments">javaÖĞRSA¼Ó½âÃÜµÄÊµÏÖ</a>
+    <p style="margin:0px;"><a href="/tb305370_55" class="user_name">tb305370_55</a>:
+Ğ»Ğ»
+    </p>
+    </li>
+    <li>
+   
+         <a href="/centralperk/article/details/47040081#comments">android studio ³ÌĞòÕæ»úÔËĞĞÖĞÎÄÏÔÊ¾ÂÒÂë</a>
+    <p style="margin:0px;"><a href="/qq_15003505" class="user_name">qq_15003505</a>:
+¾ø¶Ô²»ÄÜÓÃGBK
+    </p>
+    </li>
+    <li>
+   
+         <a href="/centralperk/article/details/8585977#comments">UbuntuÏÂ´î½¨Tomcat·şÎñÆ÷</a>
+    <p style="margin:0px;"><a href="/huangzonggui" class="user_name">huangzonggui</a>:
+ÉÏÒ»ÆªÔÚÄÄ
+    </p>
+    </li>
+    <li>
+   
+         <a href="/centralperk/article/details/8603514#comments">Ê¹ÓÃcmdÃüÁîÉ¾³ıÎÄ¼ş¼ĞÏÂËùÓĞÎÄ¼ş</a>
+    <p style="margin:0px;"><a href="/u014589848" class="user_name">u014589848</a>:
+rmdir /s/q d:\123\abcÎªÉ¶°ÑabcÄ¿Â¼Ò³¸øÉ¾³ıÁË£¬ÓĞÃüÁî²»É¾µôabcÄ¿Â¼µÄÂğ
+    </p>
+    </li>
+    <li>
+   
+         <a href="/centralperk/article/details/8603514#comments">android studio ³ÌĞòÕæ»úÔËĞĞÖĞÎÄÏÔÊ¾ÂÒÂë</a>
+    <p style="margin:0px;"><a href="/qq_26263231" class="user_name">qq_26263231</a>:
+¶àĞ»·ÖÏíÁË
+    </p>
+    </li>
+    <li>
+   
+         <a href="/centralperk/article/details/48369899#comments">android Ê¹ÓÃzxingÉú³ÉÖĞ¼äÇ¶Ì×logoµÄ¶şÎ¬Âë</a>
+    <p style="margin:0px;"><a href="/xiaoheixiadoIT" class="user_name">xiaoheixiadoIT</a>:
+ÔõÃ´°ÑÖĞ¼äµÄlogo±ä³ÉÔ²ĞÎ°¡
+    </p>
+    </li>
+    <li>
+   
+         <a href="/centralperk/article/details/48369899#comments">javaÖĞRSA¼Ó½âÃÜµÄÊµÏÖ</a>
+    <p style="margin:0px;"><a href="/lhxdong" class="user_name">lhxdong</a>:
+@u011239468:ÄãµÄÎÊÌâ½â¾öÁËÂğ£¿ÎÒ½âÎö³öÀ´µÄÊı¾İÏñÊÇ±»Ìî³äÒ»Ñù£¬0x00±ä³ÉÁË0x18
+    </p>
+    </li>
+    <li>
+   
+         <a href="/centralperk/article/details/48369899#comments">javaÖĞRSA¼Ó½âÃÜµÄÊµÏÖ</a>
+    <p style="margin:0px;"><a href="/lhxdong" class="user_name">lhxdong</a>:
+@u011239468:Â¥ÉÏ£¬ÄãµÄÂÒÂë½â¾öÁËÂğ£¿
+    </p>
+    </li>
+    <li>
+   
+         <a href="/centralperk/article/details/7597516#comments">android ¼àÌıÍøÂçÁ¬½Ó×´Ì¬µÄ¸Ä±ä</a>
+    <p style="margin:0px;"><a href="/sadcui" class="user_name">sadcui</a>:
+@shenwu35:: Neither user 10118 nor current process...
+    </p>
+    </li>
+    <li>
+   
+         <a href="/centralperk/article/details/7597516#comments">javaÖĞRSA¼Ó½âÃÜµÄÊµÏÖ</a>
+    <p style="margin:0px;"><a href="/u011239468" class="user_name">u011239468</a>:
+Â¥Ö÷£¬ ÇëÎÊÏÂ£¬ ÎÒ½âÃÜ³öÀ´ÊÇÕâ¸öÑù×Ó¡£ÊÇÊ²Ã´µ¼ÖÂµÄ°¡£¿0!0	+ ??E??9?...
+    </p>
+    </li>
+</ul>
+</div>
+    </div>
+    <div class="clear">
+    </div>
+
+
+                   <!-- ¹ã¸æÎ»¿ªÊ¼ --> 
+                    <ins data-revive-zoneid="190" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins> 
+                    <!-- ¹ã¸æÎ»½áÊø -->
+
+           </div>   
+
+            <div class="clear">
+            </div>
+        </div>
+
+        
+
+<script type="text/javascript" src="http://c.csdnimg.cn/rabbit/cnick/cnick.js"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/newblog.min.js"></script>
+
+
+<script type="text/javascript" src="http://medal.blog.csdn.net/showblogmedal.ashx?blogid=1028913"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/JavaScript1.js"></script>
+
+    <script type="text/javascript" src="http://passport.csdn.net/content/loginbox/login.js"></script>
+<script type="text/javascript">document.write("<img src=http://counter.csdn.net/pv.aspx?id=24 border=0 width=0 height=0>");</script>
+<script type="text/javascript" src="http://www.csdn.net/ui/scripts/Csdn/counter.js"></script>
+<script type="text/javascript" src="http://ad.csdn.net/scripts/ad-blog.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function __get_code_toolbar(snippet_id) {
+            return $("<span class='tracking-ad' data-mod='popu_167'><a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "' target='_blank' title='ÔÚCODEÉÏ²é¿´´úÂëÆ¬'  style='text-indent:0;'><img src='https://code.csdn.net/assets/CODE_ico.png' width=12 height=12 alt='ÔÚCODEÉÏ²é¿´´úÂëÆ¬' style='position:relative;top:1px;left:2px;'/></a></span>"
+                    + "<span class='tracking-ad' data-mod='popu_170'><a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "/fork' target='_blank' title='ÅÉÉúµ½ÎÒµÄ´úÂëÆ¬' style='text-indent:0;'><img src='https://code.csdn.net/assets/ico_fork.svg' width=12 height=12 alt='ÅÉÉúµ½ÎÒµÄ´úÂëÆ¬' style='position:relative;top:2px;left:2px;'/></a></span>");
+        }
+        
+        $("[code_snippet_id]").each(function () {
+            __s_id = $(this).attr("code_snippet_id");
+            if (__s_id != null && __s_id != "" && __s_id != 0 && parseInt(__s_id) > 70020) {
+                __code_tool = __get_code_toolbar(__s_id);
+                $(this).prev().find(".tools").append(__code_tool);
+            }
+        });
+
+        $(".bar").show();
+    });
+</script>
+
+
+
+
+
+    </div>
+      <!--new top-->
+    
+    <script id="csdn-toolbar-id" btnId="header_notice_num" wrapId="note1" count="5" subCount="5" type="text/javascript" src="http://c.csdnimg.cn/public/common/toolbar/js/toolbar.js"></script>
+     <!--new top-->
+   
+    <link href="http://c.csdnimg.cn/comm_ask/css/ask_float_block.css" type="text/css" rel="stylesheet" />
+    <script language='JavaScript' type='text/javascript' src='http://c.csdnimg.cn/comm_ask/js/libs/wmd.js'></script>
+    <script language='JavaScript' type='text/javascript' src='http://c.csdnimg.cn/comm_ask/js/libs/showdown.js'></script>
+    <script language='JavaScript' type='text/javascript' src='http://c.csdnimg.cn/comm_ask/js/libs/prettify.js'></script>
+    <script language='JavaScript' type='text/javascript' src='http://c.csdnimg.cn/comm_ask/js/apps/ask_float_block.js'></script>
+   
+
+   
+
+  <div id="a52b5334d" style="width: 1px; height: 1px; display: none;">
+                    <script id="adJs52b5334"></script>
+                    <script>document.getElementById("adJs52b5334").src = "http://ads.csdn.net/js/opt/52b5334.js?t=" + Math.random();</script>
+   </div>
+
+    <link rel="stylesheet" href="http://static.blog.csdn.net/css/blog_code.css" />
+    <script type="text/javascript" src="http://static.blog.csdn.net/scripts/saveToCode.js"></script>
+      <script type="text/javascript" src="//csdnimg.cn/rabbit/tracking-ad/main.js?75eacd8"></script>
+
+     <link rel="stylesheet" href="http://static.blog.csdn.net/css/fa.css" />
+
+    <div class="pop_CA_cover"  style="display:none"></div>
+    <div class="pop pop_CA"  style="display:none">
+          <div class="CA_header">
+            ÊÕ²ØÖúÊÖ
+            <span class="cancel_icon"  id="fapancle"  onclick="$('.pop_CA').hide();$('.pop_CA_cover').hide();"></span>
+          </div>
+          <iframe src="" id="fa" frameborder="0" width="100%" height="360"  scrolling="no" />
+    </div>
+</body>
+</html>   
+ 
