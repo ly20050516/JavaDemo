@@ -2,6 +2,7 @@ package com.ly.security.rsa;
 
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
+import java.util.Base64;
 import java.util.HashMap;
 
 
@@ -52,9 +53,13 @@ public class Main {
 				+ "Çë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜ"
 				+ "Çë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜ"
 				+ "Çë³¢ÊÔ½øÐÐ¼ÓÃÜÇë³¢ÊÔ½øÐÐ¼ÓÃÜ", publicKey);
-		System.out.println("encrptyData length = " + encrptyData.length);
 		System.out.println("do encrpty data cost " + (System.currentTimeMillis() - t1));
 		
+		System.out.println("encrptyData length = " + encrptyData.length);
+		String strEnDataString = Base64.getEncoder().encodeToString(encrptyData);
+		System.out.println("Base64 string = " + strEnDataString);
+		
+		encrptyData = Base64.getDecoder().decode(strEnDataString);
 		t1 = System.currentTimeMillis();
 		byte[] decrptyData = RSAUtils.decryptByRsaPrivateKey(encrptyData, rsaPrivateKey);
 		System.out.println("do descrpyt data cost " + (System.currentTimeMillis() - t1));
