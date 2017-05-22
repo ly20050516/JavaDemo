@@ -204,7 +204,7 @@ public class RegexSample {
 	public static void main(String[] args) {
 
 		RegexSample rs = new RegexSample();
-//		rs.run();
+		rs.run();
 //		rs.zeroOrMore();
 //		rs.oblique();
 //		rs.oneOrMore();
@@ -213,7 +213,7 @@ public class RegexSample {
 //		rs.zeroOrOne();
 //		rs.anyChar();
 //		rs.justn();
-		rs.n();
+//		rs.n();
 	}
 
 }
